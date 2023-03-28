@@ -26,6 +26,9 @@ body {
     text-align: center;
     border-radius: 1rem;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .plain {
@@ -45,18 +48,19 @@ body {
     ;
 }
 
+#score {
+    font-size: 2.5rem;
+}
+
 #result {
     height: 35%;
     width: 50%;
+    padding: 15px;
     border-radius: 109px;
     background: #5000ca;
     box-shadow: inset -7px -7px 14px #4400ac,
                 inset 7px 7px 14px #5c00e8;
     color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    line-height: 0px;
-    padding: 0.7rem;
 }
 
 #result-opacity {
@@ -66,12 +70,15 @@ body {
 button {
     width: 100%;
     margin: 1rem auto;
-    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.734);
+    color: whitesmoke;
     border: 0px;
+    border-radius: 2rem;
     height: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.85);
 }
 
 #your-result, #great, #summary {
@@ -84,8 +91,13 @@ button {
     font-weight: 690;
 }
 
-button > h1 {
-    font-size: 40;
+.pTags {
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
 }
 
 #great {
@@ -93,15 +105,7 @@ button > h1 {
 }
 
 #performance {
-    padding-top: 1rem;
     opacity: 80%;
-}
-
-#continue {
-    background: rgba(0, 0, 0, 0.734);
-    color: whitesmoke;
-    border-radius: 2rem;
-    float: left; 
 }
 
 @media(max-width: 400px) {
